@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>Your tama's profile</title>
+</head>
+<body>
+	<h1>Gudetamagochi</h1>
+    <div id="menu">
+        <ul>
+            <li><a href="">Information</a></li>
+            <li><a th:href="@{${gudetama.name} + '/trickcenter'}">Trick Center</a></li>
+            <li><a th:href="@{${gudetama.name} + '/restaurant'}">Restaurant</a></li>
+        </ul>
+    </div>
+    <img src="/images/gudetama.png">
+    <p th:utext="'This is ' + ${gudetama.name} + '!<br>Currently living on ' + ${gudetama.getFood().getFoodName().toLowerCase()} + ' and ' + ${gudetama.getDrink().getDrinkName().toLowerCase()} + '. He knows ' + ${gudetama.tricks.size()} + ' tricks.'" />
+    <h3>Known tricks</h3>
+    <ul>
+        <li th:each="trick : ${gudetama.tricks}" th:text="${trick.trickName}"></li>
+    </ul>
+</body>
+</html>

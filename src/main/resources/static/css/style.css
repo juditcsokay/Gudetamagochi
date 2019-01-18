@@ -1,0 +1,115 @@
+body {
+	text-align: center;
+	background: #F9C332;
+	max-width: 700px;
+	width: 80%;
+	margin: 20px auto;
+	padding: 20px;
+	font-family: 'Poor Story', cursive;
+}
+
+@font-face {
+    font-family: Sile;
+    src: url(sile.ttf);
+}
+
+h1{
+	font-family: Sile;
+  	color: #FFFFFF;
+  	font-size: 80px;
+  	font-weight: normal;
+  	margin-top: 0px;
+  	margin-bottom: 20px;
+}
+
+h2 {
+	font-family: Sile;
+  	color: #FFFFFF;
+  	font-size: 55px;
+  	font-weight: normal;
+  	margin-bottom: 17px;
+}
+
+p { 
+	font-size: 22px;
+}
+
+h3 {
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+ul {
+	margin-top: 10px;
+	font-size: 18px;
+	text-align: center; 
+	list-style-position: inside;
+}
+
+#menu {
+	margin: auto;
+}
+
+#back {
+	margin-top: 25px;
+}
+
+#menu ul{
+	text-align: center;
+	max-width: 700px;
+	padding: 0px;
+}
+
+#menu li {
+	display: inline;
+	list-style-type: none;
+}
+
+a {
+	font-size: 25px;
+	background-color: white;
+	padding: 7px;
+	border-radius: 6px;
+	color: #F9C332;
+	font-family: Sile;
+	text-decoration: none;
+	margin-bottom: 20px;
+	margin-left: 6px;
+	margin-right: 6px;
+}
+
+a:hover {
+	font-size: 25px;
+	background-color: #F9C332;
+	padding: 7px;
+	color: #FFFFFF;
+	font-family: Sile;
+	text-decoration: none;
+	margin-bottom: 20px;
+
+}
+
+img {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="submit"] {
+	font-size: 25px;
+	width: 120px;
+	background-color: white;
+	padding: 7px;
+	margin-left: 15px;
+	border-radius: 6px;
+	color: #F9C332;
+	font-family: Sile;
+	border: 0px;
+}
+
+input[type="text"] {
+	border: 0px;
+	padding: 13px 10px 10px 13px;
+	width: 150px;
+}
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Learn tricks!</title>
+    <link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+    <h2>Welcome to the restaurant of delicious dishes and drinks!</h2>
+    <p>What do you want your pet to eat and drink?<br>Select from our divine dishes and drinks!</p>
+    <form action="#" th:action="'/' + ${gudetama.name} + '/feed'" method="post">
+        <select name="newfood" label="Fascinating dishes">
+            <option th:each="oneFood: ${foodList}" th:text="${oneFood.foodName}" th:value="${oneFood.foodName}"></option>
+        </select>
+        <select name="newdrink" label="Marvelous drinks">
+            <option th:each="oneDrink: ${drinkList}" th:text="${oneDrink.drinkName}" th:value="${oneDrink.drinkName}"></option>
+        </select>
+        <input type="submit" value="Let's go!">
+    </form>
+    <div id="back">
+        <a th:href="'/' + ${gudetama.name}">Back</a>
+    </div>
+</body>
+</html>
